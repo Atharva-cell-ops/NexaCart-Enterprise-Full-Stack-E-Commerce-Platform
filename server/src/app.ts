@@ -20,7 +20,28 @@ export const createApp = () => {
   // CORS Configuration
   app.use(
     cors({
-      origin: [env.CLIENT_URL, 'http://localhost:5173', 'http://127.0.0.1:5173'],
+      origin: (origin, callback) => {
+        // Allow requests with no origin (like mobile apps, curl, or server-to-server)
+        if (!origin) return callback(null, true);
+
+        // Allow localhost development
+        if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
+          return callback(null, true);
+        }
+
+        // Allow configured CLIENT_URL
+        if (env.CLIENT_URL && origin.replace(/\/$/, '') === env.CLIENT_URL.replace(/\/$/, '')) {
+          return callback(null, true);
+        }
+
+        // Allow all Vercel deployment and preview domains
+        if (origin.endsWith('.vercel.app') || origin.includes('vercel.app')) {
+          return callback(null, true);
+        }
+
+        // Fallback allow for public portfolio API consumers
+        return callback(null, true);
+      },
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization'],
