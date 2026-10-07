@@ -73,6 +73,24 @@ export const createApp = () => {
   app.use('/api/auth/login', authLimiter);
   app.use('/api/auth/register', authLimiter);
 
+  // Root API Information Route
+  app.get('/', (req, res) => {
+    res.json({
+      service: 'NexaCart Enterprise REST API',
+      status: 'online',
+      version: '1.0.0',
+      documentation: 'https://github.com/Atharva-cell-ops/NexaCart-Enterprise-Full-Stack-E-Commerce-Platform',
+      health: '/api/health',
+      endpoints: {
+        products: '/api/products',
+        categories: '/api/categories',
+        auth: '/api/auth',
+        cart: '/api/cart',
+        orders: '/api/orders',
+      },
+    });
+  });
+
   // Mount API Endpoints
   app.use('/api', apiRoutes);
 
