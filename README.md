@@ -2,13 +2,13 @@
 
 > **A portfolio-ready, production-quality modern e-commerce application designed for high-performance hardware, acoustics, and workspace tech.**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://nextcart-k68n.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://nexacart-ujhu.vercel.app/)
 [![API Status](https://img.shields.io/badge/API_Status-Live-46E3B7?style=for-the-badge&logo=render)](https://nexacart-enterprise-full-stack-e.onrender.com/api/health)
 
 ---
 
 ### 🌐 Live Production Links
-- 🛒 **Storefront Website:** [https://nextcart-k68n.vercel.app/](https://nextcart-k68n.vercel.app/)
+- 🛒 **Storefront Website:** [https://nexacart-ujhu.vercel.app/](https://nexacart-ujhu.vercel.app/)
 - 📡 **REST API Server:** [https://nexacart-enterprise-full-stack-e.onrender.com](https://nexacart-enterprise-full-stack-e.onrender.com)
 - 🏥 **API Health Check:** [https://nexacart-enterprise-full-stack-e.onrender.com/api/health](https://nexacart-enterprise-full-stack-e.onrender.com/api/health)
 
@@ -68,8 +68,8 @@
 ### 1. Clone & Install Dependencies
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/nexacart.git
-cd nexacart
+git clone https://github.com/Atharva-cell-ops/NexaCart-Enterprise-Full-Stack-E-Commerce-Platform.git
+cd NexaCart-Enterprise-Full-Stack-E-Commerce-Platform
 
 # Install root dependencies
 npm install
