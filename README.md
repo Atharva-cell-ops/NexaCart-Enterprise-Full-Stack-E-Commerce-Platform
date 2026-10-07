@@ -2,7 +2,15 @@
 
 > **A portfolio-ready, production-quality modern e-commerce application designed for high-performance hardware, acoustics, and workspace tech.**
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://nextcart-k68n.vercel.app/)
+[![API Status](https://img.shields.io/badge/API_Status-Live-46E3B7?style=for-the-badge&logo=render)](https://nexacart-enterprise-full-stack-e.onrender.com/api/health)
+
 ---
+
+### 🌐 Live Production Links
+- 🛒 **Storefront Website:** [https://nextcart-k68n.vercel.app/](https://nextcart-k68n.vercel.app/)
+- 📡 **REST API Server:** [https://nexacart-enterprise-full-stack-e.onrender.com](https://nexacart-enterprise-full-stack-e.onrender.com)
+- 🏥 **API Health Check:** [https://nexacart-enterprise-full-stack-e.onrender.com/api/health](https://nexacart-enterprise-full-stack-e.onrender.com/api/health)
 
 ## 🌟 Quick Start & Demo Credentials
 
